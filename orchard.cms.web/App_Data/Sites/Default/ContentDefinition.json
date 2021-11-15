@@ -1,0 +1,1858 @@
+{
+  "ContentTypeDefinitionRecords": [
+    {
+      "Name": "Menu",
+      "DisplayName": "Menu",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true
+        }
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "0"
+            }
+          }
+        },
+        {
+          "PartName": "AliasPart",
+          "Name": "AliasPart",
+          "Settings": {
+            "AliasPartSettings": {
+              "Pattern": "{{ ContentItem | display_text | slugify }}"
+            },
+            "ContentTypePartSettings": {
+              "Position": "1"
+            }
+          }
+        },
+        {
+          "PartName": "MenuPart",
+          "Name": "MenuPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "2"
+            }
+          }
+        },
+        {
+          "PartName": "MenuItemsListPart",
+          "Name": "MenuItemsListPart",
+          "Settings": {}
+        }
+      ]
+    },
+    {
+      "Name": "LinkMenuItem",
+      "DisplayName": "Link Menu Item",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Stereotype": "MenuItem"
+        }
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "LinkMenuItemPart",
+          "Name": "LinkMenuItemPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "0"
+            }
+          }
+        },
+        {
+          "PartName": "LinkMenuItem",
+          "Name": "LinkMenuItem",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "ContentMenuItem",
+      "DisplayName": "Content Menu Item",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Stereotype": "MenuItem"
+        },
+        "FullTextAspectSettings": {}
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "ContentMenuItemPart",
+          "Name": "ContentMenuItemPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "0"
+            }
+          }
+        },
+        {
+          "PartName": "ContentMenuItem",
+          "Name": "ContentMenuItem",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "HtmlMenuItem",
+      "DisplayName": "Html Menu Item",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Stereotype": "MenuItem"
+        },
+        "FullTextAspectSettings": {}
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "HtmlMenuItemPart",
+          "Name": "HtmlMenuItemPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "0"
+            }
+          }
+        },
+        {
+          "PartName": "HtmlMenuItem",
+          "Name": "HtmlMenuItem",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "SocialMetaSettings",
+      "DisplayName": "Social Meta Settings",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Stereotype": "CustomSettings"
+        },
+        "FullTextAspectSettings": {}
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "SocialMetaSettings",
+          "Name": "SocialMetaSettings",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "0"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "PDFCollateral",
+      "DisplayName": "PDF Collateral",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Creatable": true,
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true
+        },
+        "FullTextAspectSettings": {}
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "PDFCollateral",
+          "Name": "PDFCollateral",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "2"
+            }
+          }
+        },
+        {
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "1"
+            }
+          }
+        },
+        {
+          "PartName": "LocalizationPart",
+          "Name": "LocalizationPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "3"
+            }
+          }
+        },
+        {
+          "PartName": "AliasPart",
+          "Name": "AliasPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "0"
+            }
+          }
+        },
+        {
+          "PartName": "LegacyDocumentMeta",
+          "Name": "LegacyDocumentMeta",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "4"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "Taxonomy",
+      "DisplayName": "Taxonomy",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Creatable": true,
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true
+        }
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "1"
+            }
+          }
+        },
+        {
+          "PartName": "AliasPart",
+          "Name": "AliasPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "2"
+            },
+            "AliasPartSettings": {
+              "Pattern": "{{ Model.ContentItem | display_text | slugify }}"
+            }
+          }
+        },
+        {
+          "PartName": "AutoroutePart",
+          "Name": "AutoroutePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "3"
+            },
+            "AutoroutePartSettings": {
+              "Pattern": "{{ Model.ContentItem | display_text | slugify }}",
+              "AllowRouteContainedItems": true
+            }
+          }
+        },
+        {
+          "PartName": "TaxonomyPart",
+          "Name": "TaxonomyPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "4"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "GenericProduct",
+      "DisplayName": "Generic Product",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Creatable": true,
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true
+        },
+        "FullTextAspectSettings": {}
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "GenericProduct",
+          "Name": "GenericProduct",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "2"
+            }
+          }
+        },
+        {
+          "PartName": "AutoroutePart",
+          "Name": "AutoroutePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "1"
+            },
+            "AutoroutePartSettings": {
+              "AllowCustomPath": true
+            },
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "PartName": "SeoMetaPart",
+          "Name": "SeoMetaPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "3"
+            }
+          }
+        },
+        {
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "0"
+            }
+          }
+        },
+        {
+          "PartName": "LocalizationPart",
+          "Name": "LocalizationPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "4"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "OrderableProduct",
+      "DisplayName": "Orderable Product",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Creatable": true,
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true
+        },
+        "FullTextAspectSettings": {}
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "OrderableProduct",
+          "Name": "OrderableProduct",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "2"
+            }
+          }
+        },
+        {
+          "PartName": "AutoroutePart",
+          "Name": "AutoroutePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "1"
+            },
+            "AutoroutePartSettings": {
+              "AllowCustomPath": true
+            },
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "PartName": "SeoMetaPart",
+          "Name": "SeoMetaPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "3"
+            }
+          }
+        },
+        {
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "0"
+            }
+          }
+        },
+        {
+          "PartName": "LocalizationPart",
+          "Name": "LocalizationPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "4"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "ProductSeries",
+      "DisplayName": "Product Series",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Creatable": true,
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true
+        },
+        "FullTextAspectSettings": {}
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "ProductSeries",
+          "Name": "ProductSeries",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "2"
+            }
+          }
+        },
+        {
+          "PartName": "AutoroutePart",
+          "Name": "AutoroutePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "1"
+            },
+            "AutoroutePartSettings": {
+              "AllowCustomPath": true
+            },
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "PartName": "LocalizationPart",
+          "Name": "LocalizationPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "4"
+            }
+          }
+        },
+        {
+          "PartName": "SeoMetaPart",
+          "Name": "SeoMetaPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "3"
+            }
+          }
+        },
+        {
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "0"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "PressRelease",
+      "DisplayName": "Press Release",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Creatable": true,
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true
+        },
+        "FullTextAspectSettings": {}
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "PressRelease",
+          "Name": "PressRelease",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "2"
+            }
+          }
+        },
+        {
+          "PartName": "AutoroutePart",
+          "Name": "AutoroutePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "1"
+            },
+            "AutoroutePartSettings": {
+              "AllowCustomPath": true
+            },
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "PartName": "LocalizationPart",
+          "Name": "LocalizationPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "4"
+            }
+          }
+        },
+        {
+          "PartName": "SeoMetaPart",
+          "Name": "SeoMetaPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "3"
+            }
+          }
+        },
+        {
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "0"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "TechNote",
+      "DisplayName": "Tech Note",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Creatable": true,
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true
+        },
+        "FullTextAspectSettings": {}
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "TechNote",
+          "Name": "TechNote",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "2"
+            }
+          }
+        },
+        {
+          "PartName": "AutoroutePart",
+          "Name": "AutoroutePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "1"
+            },
+            "AutoroutePartSettings": {
+              "AllowCustomPath": true
+            },
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "PartName": "LocalizationPart",
+          "Name": "LocalizationPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "4"
+            }
+          }
+        },
+        {
+          "PartName": "SeoMetaPart",
+          "Name": "SeoMetaPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "3"
+            }
+          }
+        },
+        {
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "0"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "ApplicationNote",
+      "DisplayName": "Application Note",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Creatable": true,
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true
+        },
+        "FullTextAspectSettings": {}
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "ApplicationNote",
+          "Name": "ApplicationNote",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "2"
+            }
+          }
+        },
+        {
+          "PartName": "AutoroutePart",
+          "Name": "AutoroutePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "1"
+            },
+            "AutoroutePartSettings": {
+              "AllowCustomPath": true
+            },
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "PartName": "LocalizationPart",
+          "Name": "LocalizationPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "4"
+            }
+          }
+        },
+        {
+          "PartName": "SeoMetaPart",
+          "Name": "SeoMetaPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "3"
+            }
+          }
+        },
+        {
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "0"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "ContentPartDefinitionRecords": [
+    {
+      "Name": "LiquidPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Provides a Liquid formatted body for your content item."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "CommonPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Provides an editor for the common properties of a content item."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "AliasPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Provides a way to define custom aliases for content items."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "AutoroutePart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Provides a custom url for your content item."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "PreviewPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Provides a way to define the url that is used to render your content item for preview. You only need to use this for the content preview feature when running the frontend decoupled from the admin."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "WidgetsListPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Provides a way to add widgets to Layout zones for your content item."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "FlowPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Provides a customizable body for your content item where you can build a content structure with widgets."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "BagPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Reusable": true,
+          "Description": "Provides a collection behavior for your content item where you can place other content items."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "HtmlBodyPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Provides an HTML Body for your content item."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "ListPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Add a list behavior."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "MarkdownBodyPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Provides a Markdown formatted body for your content item."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "TitlePart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Provides a Title for your content item.",
+          "DefaultPosition": "0"
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "MenuPart",
+      "Settings": {},
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "MenuItemPart",
+      "Settings": {},
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "LinkMenuItemPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Provides a menu link behavior for your content item."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "ContentMenuItemPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "DisplayName": "Content Menu Item",
+          "Description": "Provides a menu link behavior with the Content Picker for your content item."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "ContentPickerField",
+          "Name": "SelectedContentItem",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Selected Content Item",
+              "Position": "0"
+            },
+            "ContentPickerFieldSettings": {
+              "Required": true,
+              "DisplayAllContentTypes": true,
+              "DisplayedContentTypes": []
+            },
+            "ContentIndexSettings": {}
+          }
+        }
+      ]
+    },
+    {
+      "Name": "HtmlMenuItemPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "DisplayName": "Html Menu Item",
+          "Description": "Provides a menu link behavior with a field to display html for the link text."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "SeoMetaPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Provides a part that allows SEO meta descriptions to be applied to a content item."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "MediaField",
+          "Name": "DefaultSocialImage",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Default social image"
+            },
+            "MediaFieldSettings": {
+              "Multiple": false
+            }
+          }
+        },
+        {
+          "FieldName": "MediaField",
+          "Name": "OpenGraphImage",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Open graph image"
+            },
+            "MediaFieldSettings": {
+              "Multiple": false
+            }
+          }
+        },
+        {
+          "FieldName": "MediaField",
+          "Name": "TwitterImage",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Twitter image"
+            },
+            "MediaFieldSettings": {
+              "Multiple": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "SocialMetaSettings",
+      "Settings": {},
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "MediaField",
+          "Name": "DefaultSocialImage",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Default social image",
+              "Position": "1"
+            },
+            "ContentIndexSettings": {},
+            "MediaFieldSettings": {
+              "Multiple": false
+            }
+          }
+        },
+        {
+          "FieldName": "MediaField",
+          "Name": "OpenGraphImage",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Open graph image",
+              "Position": "2"
+            },
+            "ContentIndexSettings": {},
+            "MediaFieldSettings": {
+              "Multiple": false
+            }
+          }
+        },
+        {
+          "FieldName": "MediaField",
+          "Name": "TwitterImage",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Twitter Image",
+              "Position": "3"
+            },
+            "ContentIndexSettings": {},
+            "MediaFieldSettings": {
+              "Multiple": false
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "OpenGraphType",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Open Graph Type",
+              "Position": "4"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "TwitterCard",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Twitter Card",
+              "Position": "8"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "TwitterCreator",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Twitter Creator",
+              "Position": "10"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "TwitterSite",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Twitter Site",
+              "Position": "11"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "GoogleSchema",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Google Schema",
+              "Editor": "CodeMirror",
+              "Position": "12"
+            },
+            "TextFieldSettings": {},
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "OpenGraphSiteName",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Open Graph Site Name",
+              "Position": "6"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "OpenGraphAppId",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Open Graph App Id",
+              "Position": "7"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "DefaultMetaDescription",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Default Meta Description",
+              "Editor": "CodeMirror",
+              "Position": "0"
+            },
+            "TextFieldSettings": {},
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "DefaultTwitterDescription",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Default Twitter Description",
+              "Editor": "CodeMirror",
+              "Position": "9"
+            },
+            "TextFieldSettings": {},
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "DefaultOpenGraphDescription",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Default Open Graph Description",
+              "Editor": "CodeMirror",
+              "Position": "5"
+            },
+            "TextFieldSettings": {},
+            "ContentIndexSettings": {}
+          }
+        }
+      ]
+    },
+    {
+      "Name": "LocalizationPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Provides a way to create localized version of content."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "PDFCollateral",
+      "Settings": {},
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "TextField",
+          "Name": "Description",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Description",
+              "Position": "3"
+            }
+          }
+        },
+        {
+          "FieldName": "MediaField",
+          "Name": "PDFFile",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "PDF File",
+              "Position": "4"
+            },
+            "ContentIndexSettings": {},
+            "MediaFieldSettings": {
+              "Required": true,
+              "Multiple": false,
+              "AllowMediaText": false
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "FullTitle",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Full Title",
+              "Position": "1"
+            }
+          }
+        },
+        {
+          "FieldName": "MultiTextField",
+          "Name": "ContentType",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Content Type",
+              "Editor": "CheckboxList",
+              "Position": "2"
+            },
+            "MultiTextFieldSettings": {
+              "Required": true,
+              "Options": [
+                {
+                  "name": "Datasheet",
+                  "value": "Datasheet"
+                },
+                {
+                  "name": "User Manual",
+                  "value": "UserManual"
+                },
+                {
+                  "name": "Dimensions",
+                  "value": "Dimensions"
+                },
+                {
+                  "name": "Accessories",
+                  "value": "Accessories"
+                }
+              ]
+            },
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "LocalizedTitle",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Localized Title",
+              "Position": "0"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "GenericProduct",
+      "Settings": {},
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "MediaField",
+          "Name": "BlockDiagram",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Block Diagram",
+              "Position": "4"
+            }
+          }
+        },
+        {
+          "FieldName": "HtmlField",
+          "Name": "Features",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Features",
+              "Editor": "Wysiwyg",
+              "Position": "2"
+            },
+            "HtmlFieldSettings": {},
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "FieldName": "MediaField",
+          "Name": "CertificationsImage",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Certifications Image",
+              "Position": "3"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "SubTitle",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "SubTitle",
+              "Position": "0"
+            }
+          }
+        },
+        {
+          "FieldName": "HtmlField",
+          "Name": "Description",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Description",
+              "Editor": "Wysiwyg",
+              "Position": "1"
+            },
+            "HtmlFieldSettings": {},
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "FieldName": "LocalizationSetContentPickerField",
+          "Name": "RelatedCollateral",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Related Collateral",
+              "Position": "5"
+            },
+            "LocalizationSetContentPickerFieldSettings": {
+              "Multiple": true,
+              "DisplayedContentTypes": [
+                "PDFCollateral"
+              ]
+            },
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "FieldName": "LocalizationSetContentPickerField",
+          "Name": "OrderableProducts",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Orderable Products",
+              "Position": "6"
+            },
+            "LocalizationSetContentPickerFieldSettings": {
+              "Multiple": true,
+              "DisplayedContentTypes": [
+                "OrderableProduct"
+              ]
+            },
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "FieldName": "NumericField",
+          "Name": "LegacyFamilyId",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Legacy Family Id",
+              "Position": "7"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "LegacyPtypeIds",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Legacy Ptype Ids",
+              "Position": "8"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "OrderableProduct",
+      "Settings": {},
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "TextField",
+          "Name": "PartNumber",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Part Number",
+              "Position": "0"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "Description",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Description",
+              "Position": "1"
+            }
+          }
+        },
+        {
+          "FieldName": "MediaField",
+          "Name": "ProductImage",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Product Image",
+              "Position": "2"
+            },
+            "ContentIndexSettings": {},
+            "MediaFieldSettings": {
+              "Required": true,
+              "Multiple": false
+            }
+          }
+        },
+        {
+          "FieldName": "LocalizationSetContentPickerField",
+          "Name": "RelatedCollateral",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Related Collateral",
+              "Position": "3"
+            },
+            "LocalizationSetContentPickerFieldSettings": {
+              "Multiple": true,
+              "DisplayedContentTypes": [
+                "PDFCollateral"
+              ]
+            },
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "FieldName": "LocalizationSetContentPickerField",
+          "Name": "ParentGenericProduct",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Parent Generic Product",
+              "Position": "4"
+            },
+            "LocalizationSetContentPickerFieldSettings": {
+              "DisplayedContentTypes": [
+                "GenericProduct"
+              ]
+            },
+            "ContentIndexSettings": {}
+          }
+        }
+      ]
+    },
+    {
+      "Name": "LegacyDocumentMeta",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true
+        }
+      },
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "NumericField",
+          "Name": "DocumentId",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "DocumentId",
+              "Position": "0"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "OriginalFilename",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "OriginalFilename",
+              "Position": "1"
+            }
+          }
+        },
+        {
+          "FieldName": "NumericField",
+          "Name": "Origination",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Origination",
+              "Position": "2"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "DirectURL",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "DirectURL",
+              "Position": "3"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "DocNumber",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "DocNumber",
+              "Position": "4"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "DocumentType",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "DocumentType",
+              "Position": "5"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "FileTypes",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "FileTypes",
+              "Position": "6"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "HyperlinkUrl",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "HyperlinkUrl",
+              "Position": "7"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "InternalDescription",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "InternalDescription",
+              "Position": "8"
+            }
+          }
+        },
+        {
+          "FieldName": "DateTimeField",
+          "Name": "LastUpdated",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "LastUpdated",
+              "Position": "9"
+            }
+          }
+        },
+        {
+          "FieldName": "DateTimeField",
+          "Name": "PostDate",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "PostDate",
+              "Position": "10"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "ProductFamily",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Product Family",
+              "Position": "11"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "ProductImage",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Product Image",
+              "Position": "12"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "RelativePath",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Relative Path",
+              "Position": "13"
+            }
+          }
+        },
+        {
+          "FieldName": "NumericField",
+          "Name": "UploadedByPersonId",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "UploadedByPersonId",
+              "Position": "14"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "UploadPathCategory",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "UploadPathCategory",
+              "Position": "15"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "Version",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Version",
+              "Position": "16"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "ProductSeries",
+      "Settings": {},
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "TextField",
+          "Name": "LocalizedTitle",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Localized Title",
+              "Position": "0"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "SubTitle",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "SubTitle",
+              "Position": "1"
+            }
+          }
+        },
+        {
+          "FieldName": "HtmlField",
+          "Name": "Description",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Description",
+              "Editor": "Wysiwyg",
+              "Position": "2"
+            },
+            "HtmlFieldSettings": {},
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "FieldName": "HtmlField",
+          "Name": "Features",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Features",
+              "Editor": "Wysiwyg",
+              "Position": "4"
+            },
+            "HtmlFieldSettings": {},
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "FieldName": "MediaField",
+          "Name": "CertificationsImage",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Certifications Image",
+              "Position": "5"
+            },
+            "ContentIndexSettings": {},
+            "MediaFieldSettings": {
+              "Multiple": false
+            }
+          }
+        },
+        {
+          "FieldName": "MediaField",
+          "Name": "ProductImage",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Product Image",
+              "Position": "3"
+            }
+          }
+        },
+        {
+          "FieldName": "LocalizationSetContentPickerField",
+          "Name": "RelatedCollateral",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Related Collateral",
+              "Position": "6"
+            },
+            "LocalizationSetContentPickerFieldSettings": {
+              "Multiple": true,
+              "DisplayedContentTypes": [
+                "PDFCollateral"
+              ]
+            },
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "FieldName": "LocalizationSetContentPickerField",
+          "Name": "GenericProducts",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Generic Products",
+              "Position": "7"
+            },
+            "LocalizationSetContentPickerFieldSettings": {
+              "Multiple": true,
+              "DisplayedContentTypes": [
+                "GenericProduct"
+              ]
+            },
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "FieldName": "NumericField",
+          "Name": "LegacyFamilyId",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Legacy Family Id",
+              "Position": "8"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "PressRelease",
+      "Settings": {},
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "TextField",
+          "Name": "Abstract",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Abstract",
+              "Position": "2"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "LocalizedTitle",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Localized Title",
+              "Position": "0"
+            }
+          }
+        },
+        {
+          "FieldName": "MediaField",
+          "Name": "Images",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Images",
+              "Position": "4"
+            }
+          }
+        },
+        {
+          "FieldName": "HtmlField",
+          "Name": "ArticleContent",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Article Content",
+              "Editor": "Wysiwyg",
+              "Position": "3"
+            },
+            "HtmlFieldSettings": {},
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "FieldName": "LocalizationSetContentPickerField",
+          "Name": "RelatedItems",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Related Items",
+              "Position": "5"
+            },
+            "LocalizationSetContentPickerFieldSettings": {
+              "Multiple": true,
+              "DisplayedContentTypes": [
+                "ApplicationNote",
+                "GenericProduct",
+                "OrderableProduct",
+                "PDFCollateral",
+                "PressRelease",
+                "ProductSeries",
+                "TechNote"
+              ]
+            },
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "FieldName": "DateField",
+          "Name": "ReleaseDate",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Release Date",
+              "Position": "1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "TechNote",
+      "Settings": {},
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "TextField",
+          "Name": "Abstract",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Abstract",
+              "Position": "1"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "LocalizedTitle",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Localized Title",
+              "Position": "0"
+            }
+          }
+        },
+        {
+          "FieldName": "MediaField",
+          "Name": "Images",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Images",
+              "Position": "3"
+            }
+          }
+        },
+        {
+          "FieldName": "HtmlField",
+          "Name": "ArticleContent",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Article Content",
+              "Editor": "Wysiwyg",
+              "Position": "2"
+            },
+            "HtmlFieldSettings": {},
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "FieldName": "LocalizationSetContentPickerField",
+          "Name": "RelatedItems",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Related Items",
+              "Position": "4"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "ApplicationNote",
+      "Settings": {},
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "TextField",
+          "Name": "Abstract",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Abstract",
+              "Position": "1"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "LocalizedTitle",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Localized Title",
+              "Position": "0"
+            }
+          }
+        },
+        {
+          "FieldName": "MediaField",
+          "Name": "Images",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Images",
+              "Position": "3"
+            }
+          }
+        },
+        {
+          "FieldName": "HtmlField",
+          "Name": "ArticleContent",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Article Content",
+              "Editor": "Wysiwyg",
+              "Position": "2"
+            },
+            "HtmlFieldSettings": {},
+            "ContentIndexSettings": {}
+          }
+        },
+        {
+          "FieldName": "LocalizationSetContentPickerField",
+          "Name": "RelatedItems",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Related Items",
+              "Position": "4"
+            },
+            "LocalizationSetContentPickerFieldSettings": {
+              "Multiple": true,
+              "DisplayedContentTypes": [
+                "ApplicationNote",
+                "GenericProduct",
+                "PDFCollateral",
+                "PressRelease",
+                "ProductSeries",
+                "TechNote"
+              ]
+            },
+            "ContentIndexSettings": {}
+          }
+        }
+      ]
+    }
+  ],
+  "Identifier": "4g591ykx8s3b8ta0zghyr801nq"
+}
